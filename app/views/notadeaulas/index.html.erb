@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Notadeaulas</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Autor</th>
+      <th>Disciplina</th>
+      <th>Semestre</th>
+      <th>Titulo</th>
+      <th>Texto</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @notadeaulas.each do |notadeaula| %>
+      <tr>
+        <td><%= notadeaula.autor %></td>
+        <td><%= notadeaula.disciplina_id %></td>
+        <td><%= notadeaula.semestre_id %></td>
+        <td><%= notadeaula.titulo %></td>
+        <td><%= notadeaula.texto %></td>
+        <td><%= link_to 'Show', notadeaula %></td>
+        <td><%= link_to 'Edit', edit_notadeaula_path(notadeaula) %></td>
+        <td><%= link_to 'Destroy', notadeaula, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Notadeaula', new_notadeaula_path %>

@@ -1,8 +1,9 @@
 Rails.application.routes.draw do
   
+  mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
   devise_for :users
-  resources :nota
-  root 'nota#index'
+  resources :notadeaula
+  root 'notadeaula#index'
   resources :semestres
   root 'semestres#index'
   resources :disciplinas

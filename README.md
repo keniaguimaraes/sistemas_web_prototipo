@@ -1,24 +1,30 @@
-# README
+# Controle de Notas de Aula
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+- Link para aplicação: http://notasdeaula.herokuapp.com
 
-Things you may want to cover:
+[![Code Climate](https://codeclimate.com/github/keniaguimaraes/controledenotas/badges/gpa.svg)](https://codeclimate.com/github/keniaguimaraes/controledenotas)
+[![Build Status](https://travis-ci.org/keniaguimaraes/controledenotas.svg?branch=master)](https://travis-ci.org/keniaguimaraes/controledenotas)
 
-* Ruby version
+ - [Apresentação](#apresentacao)
+ - [Colaboradores](#colaboradores)
+ - [Tecnologias](#tecnologias)
+ - [Dicas](#dicas)
+ 
+## Apresentacao 
+ O projeto controlde de notas foi idealizado pensando num melhor gerenciamento das notas que utilizo no meu ambiente de trabalho.
 
-* System dependencies
+### Colaboradores 
+ - Kênia Guimarães
+ 
+### Tecnologias 
+    $ rails 5.1.3
+    $ rails_admin
+    $ rails_12factor
+    $ carrierwave
 
-* Configuration
+### Dicas
+    $ rails server -b $IP -p $PORT  ( Utilização na IDE c9)
+    $ bundle install
+    $ rake db:migrate
+    $ rake db:seed
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...

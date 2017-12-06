@@ -1,3 +1,3 @@
 class Disciplina < ApplicationRecord
-    has_many:notas
+    has_many:notadeaula
 end
