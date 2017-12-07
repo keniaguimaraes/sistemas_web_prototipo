@@ -1,30 +1,23 @@
-# Controle de Notas de Aula
+#  Notas de Aula Sistema Web
 
 - Link para aplicação: http://notasdeaula.herokuapp.com
-
-[![Code Climate](https://codeclimate.com/github/keniaguimaraes/controledenotas/badges/gpa.svg)](https://codeclimate.com/github/keniaguimaraes/controledenotas)
-[![Build Status](https://travis-ci.org/keniaguimaraes/controledenotas.svg?branch=master)](https://travis-ci.org/keniaguimaraes/controledenotas)
 
  - [Apresentação](#apresentacao)
  - [Colaboradores](#colaboradores)
  - [Tecnologias](#tecnologias)
- - [Dicas](#dicas)
- 
+
 ## Apresentacao 
- O projeto controlde de notas foi idealizado pensando num melhor gerenciamento das notas que utilizo no meu ambiente de trabalho.
+ A aplicação controlde de notas gerencia as notas de aulas da disciplina de Sistema Web.
 
 ### Colaboradores 
  - Kênia Guimarães
+ - Monira Silva
+ - Lorena
+ - Rafael Dourado
+ - Danilo Brito
  
 ### Tecnologias 
     $ rails 5.1.3
     $ rails_admin
-    $ rails_12factor
-    $ carrierwave
-
-### Dicas
-    $ rails server -b $IP -p $PORT  ( Utilização na IDE c9)
-    $ bundle install
-    $ rake db:migrate
-    $ rake db:seed
+    $ devise
 

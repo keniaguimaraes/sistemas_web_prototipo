@@ -10,22 +10,12 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171206163523) do
+ActiveRecord::Schema.define(version: 20171206183433) do
 
   create_table "disciplinas", force: :cascade do |t|
     t.string "nome"
     t.integer "horas"
     t.integer "creditos"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "nota", force: :cascade do |t|
-    t.string "autor"
-    t.integer "semestre_id"
-    t.integer "disciplina_id"
-    t.date "data"
-    t.text "texto"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -38,6 +28,7 @@ ActiveRecord::Schema.define(version: 20171206163523) do
     t.text "texto"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.date "data"
   end
 
   create_table "semestres", force: :cascade do |t|

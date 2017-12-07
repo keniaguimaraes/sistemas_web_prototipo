@@ -1,11 +1,8 @@
 Rails.application.routes.draw do
+  devise_for :users, :path => 'sistema', :path_names => {:sign_in => 'entra', :sign_out => 'sair', :sign_up => 'cadastrar'}
+  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  mount RailsAdmin::Engine => '/', as: 'rails_admin'
   
-  mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
-  devise_for :users
-  resources :notadeaula
-  root 'notadeaula#index'
-  resources :semestres
-  root 'semestres#index'
-  resources :disciplinas
-  root 'disciplinas#index'
+
+
 end
