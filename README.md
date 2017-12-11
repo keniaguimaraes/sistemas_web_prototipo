@@ -1,6 +1,6 @@
 #  Notas de Aula Sistema Web
 
-- Link para aplicação: http://notasdeaula.herokuapp.com
+- Link para aplicação: http://meuaplicativo.herokuapp.com
 
  - [Apresentação](#apresentacao)
  - [Colaboradores](#colaboradores)
@@ -12,7 +12,7 @@
 ### Colaboradores 
  - Kênia Guimarães
  - Monira Silva
- - Lorena
+ - Lorena Lima
  - Rafael Dourado
  - Danilo Brito
  
@@ -20,4 +20,3 @@
     $ rails 5.1.3
     $ rails_admin
     $ devise
-
