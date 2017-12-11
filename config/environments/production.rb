@@ -5,8 +5,7 @@ Rails.application.configure do
 config.i18n.enforce_available_locales = false
 config.i18n.available_locales = ["pt-BR"]
 config.i18n.default_locale = :'pt-BR'
-config.cache_classes = true
-
+  config.cache_classes = true
 
   # Eager load code on boot. This eager loads most of Rails and
   # your application in memory, allowing both threaded web servers
@@ -63,7 +62,7 @@ config.cache_classes = true
 
   # Use a real queuing backend for Active Job (and separate queues per environment)
   # config.active_job.queue_adapter     = :resque
-  # config.active_job.queue_name_prefix = "aplicativo_#{Rails.env}"
+  # config.active_job.queue_name_prefix = "app_#{Rails.env}"
   config.action_mailer.perform_caching = false
 
   # Ignore bad email addresses and do not raise email delivery errors.

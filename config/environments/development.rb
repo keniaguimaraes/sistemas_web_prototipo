@@ -4,10 +4,11 @@ Rails.application.configure do
   # In the development environment your application's code is reloaded on
   # every request. This slows down response time but is perfect for development
   # since you don't have to restart the web server when you make code changes.
+
 config.i18n.enforce_available_locales = false
 config.i18n.available_locales = ["pt-BR"]
 config.i18n.default_locale = :'pt-BR'
-config.cache_classes = true
+ config.cache_classes = false
 
   # Do not eager load code on boot.
   config.eager_load = false
@@ -18,6 +19,7 @@ config.cache_classes = true
   # Enable/disable caching. By default caching is disabled.
   if Rails.root.join('tmp/caching-dev.txt').exist?
     config.action_controller.perform_caching = true
+
 
     config.cache_store = :memory_store
     config.public_file_server.headers = {
